@@ -3,7 +3,7 @@ const Modal = {
     template: '#modal',
     methods: {
         close(event) {
-        this.$emit('close');
+            this.$emit('close');
         },
     },
 };
@@ -16,15 +16,15 @@ new Vue({
     },
     data () {
         return {
-        isModalVisible: false,
+            isModalVisible: false,
         };
     },
     methods: {
         showModal() {
-        this.isModalVisible = true;
+            this.isModalVisible = true;
         },
         closeModal() {
-        this.isModalVisible = false;
+            this.isModalVisible = false;
         }
     },
 });
